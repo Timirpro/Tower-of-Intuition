@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Inuition</title>
+    <link rel="icon" href="icons\lotus.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="randomChoice()">
+    <div id="tier" class="tier">
+        <button onclick="difficultySwitch()">Difficulty: normal</button>
+        <p>Level 1</p>
+    </div>
+    <section class="container">
+        <div class="wheel">
+            <ul id="wheel__sectors">
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+                <li class="sectors"></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <table class="table">
+            <tr>
+                <th>%</th>
+                <th>Overall</th>
+                <th>Level 1</th>
+                <th>Level 2</th>
+                <th>Level 3</th>
+                <th>Level 4</th>
+                <th>Level 5</th>
+                <th>Level 6</th>
+                <th>Level 7</th>
+                <th>Level 8</th>
+                <th>Level 9</th>
+            </tr>
+            <tr>
+                <td>Statistical average</td>
+                <td>-</td>
+                <td>50</td>
+                <td>33</td>
+                <td>25</td>
+                <td>20</td>
+                <td>17</td>
+                <td>14</td>
+                <td>13</td>
+                <td>11</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Player's statictics</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
