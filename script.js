@@ -39,7 +39,7 @@ function showGreenSector() {
 function pickFunction() {
     levelCount[level - 1]++;
     if (Array.from(this.parentNode.children).indexOf(this) == int_rnd_value) {
-        console.log("correct");
+        console.log("%ccorrect", "color: blue; font-weight: bold;");
         attempts = maxAttempts;
         levelWin[level - 1]++;
         stat = (stat * count + 100) / (count + 1);
@@ -54,7 +54,7 @@ function pickFunction() {
         }
     }
     else {
-        console.log("wrong");
+        console.log("%cwrong", "color: blue; font-weight: bold;");
         stat = (stat * count + 0) / (count + 1);
         count++;
         attempts--;
@@ -73,7 +73,7 @@ function pickFunction() {
         levelAvgStat[i] = 1 / (i + 2);
         sum += levelAvgStat[i] * levelCount[i];
     }
-    console.log('total count = ' + count);
+    console.log('%ctotal count = ' + count, "font-weight: bold;");
     // console.log((sum / count).toFixed(2));
     showStatistic ();
     sum = 0;
