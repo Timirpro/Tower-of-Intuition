@@ -23,7 +23,6 @@ li {
     position: absolute;
     border: 1px solid #2a1c18;
     background-color: rgb(230, 230, 211);
-    /* background-color: #ccb; */
     width: 15em;
     height: 15em;
     transform-origin: 100% 100%;
@@ -33,14 +32,14 @@ li:hover {
     background-color: rgb(209, 209, 183);
 }
 #green {
-    background-color: #90EE90;
+    background-color: #96fc96;
     /* background-color: #71d4ab; */
 }
 li:nth-child(1) {
-    transform: translateY(99%) scale(2);
+    transform: translateY(105%) scale(2.1);
 }
 li:nth-child(2) {
-    transform: translateY(99%) rotate(90deg) scale(2);
+    transform: translateY(105%) rotate(90deg) scale(2.1);
 }
 li:not(:nth-child(1)):not(:nth-child(2)) {
     display: none;
@@ -93,12 +92,13 @@ td:first-child {
 }
 button {
     width: 10em;
-    height: 1.5em;
+    height: 2em;
     margin-right: 13em;
     font-size: 0.3em;
     background-color: rgb(230, 230, 211);
     border: 2px solid #2a1c18;
     border-radius: 10px;
+    /* transform: translateY(-0.5em); */
 }
 button:hover {
     background-color: #90EE90;
