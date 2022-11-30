@@ -15,7 +15,7 @@ let sectors = document.querySelectorAll('.sectors');
 let statistics = document.querySelector('.text');
 let tier = document.querySelector('p');
 let difficulty = document.querySelector('button');
-let diffNames = ['Difficulty: normal','Difficulty: easy','Difficulty: very easy'];
+let diffNames = ['Сложность: нормально','Сложность: легко','Сложность: очень легко'];
 for (let i = 0; i < maxLevel + 1; i++) {
     sectors[i].addEventListener("click", pickFunction);
 }
@@ -49,7 +49,7 @@ function pickFunction() {
             setTimeout(function(){
                 addElements();
                 level++;
-                tier.innerText = "Level " + level;
+                tier.innerText = "Уровень " + level;
             }, 390);
         }
     }
@@ -63,7 +63,7 @@ function pickFunction() {
             setTimeout(function() {
                 removeElements();
                 level = 1;
-                tier.innerText = "Level " + level;
+                tier.innerText = "Уровень " + level;
             }, 390);
         }
     }
