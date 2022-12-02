@@ -15,7 +15,7 @@ let sectors = document.querySelectorAll('.sectors');
 let statistics = document.querySelector('.text');
 let tier = document.querySelector('p');
 let difficulty = document.querySelector('button');
-let diffNames = ['Сложность: нормально','Сложность: легко','Сложность: очень легко'];
+let diffNames = ['Сложность: &nbspнормально','Сложность: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp легко &nbsp&nbsp&nbsp&nbsp','Сложность: очень легко'];
 for (let i = 0; i < maxLevel + 1; i++) {
     sectors[i].addEventListener("click", pickFunction);
 }
