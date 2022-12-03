@@ -5,17 +5,20 @@ let count = 0;
 let stat = 0;
 let level = 1;
 let sum = 0;
+let hidden = 0;
+let prevHidden = 0;
 let maxAttempts = 1;
 let attempts;
 let levelCount = new Array(maxLevel).fill(0);
 let levelWin = new Array(maxLevel).fill(0);
 let levelStat = new Array(maxLevel).fill(0);
 let levelAvgStat = new Array(maxLevel).fill(0);
+let diffNames = ['Сложность: &nbspнормально','Сложность: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp легко &nbsp&nbsp&nbsp&nbsp','Сложность: очень легко'];
 let sectors = document.querySelectorAll('.sectors');
 let statistics = document.querySelector('.text');
 let tier = document.querySelector('p');
 let difficulty = document.querySelector('button');
-let diffNames = ['Сложность: &nbspнормально','Сложность: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp легко &nbsp&nbsp&nbsp&nbsp','Сложность: очень легко'];
+let hiddenCount = document.querySelector('.hidden_count');
 for (let i = 0; i < maxLevel + 1; i++) {
     sectors[i].addEventListener("click", pickFunction);
 }
@@ -73,6 +76,9 @@ function pickFunction() {
         levelAvgStat[i] = 1 / (i + 2);
         sum += levelAvgStat[i] * levelCount[i];
     }
+    if (prevHidden < 1) {
+        hiddenCount.innerHTML = count;
+    }
     console.log('%ctotal count = ' + count, "font-weight: bold;");
     // console.log((sum / count).toFixed(2));
     showStatistic ();
@@ -106,7 +112,6 @@ function showStatistic () {
     currentLvl.innerHTML = Math.round(100 * (levelStat[level - 1]));
 }
 function difficultySwitch() {
-    // location.reload();
     if (maxAttempts < 3) {
         maxAttempts++;
     }
@@ -114,5 +119,17 @@ function difficultySwitch() {
         maxAttempts = 1;
     }
     difficulty.innerHTML = diffNames[maxAttempts-1];
+}
+function showCount() {
+    if (hidden < 1) {
+        prevHidden = hidden;
+        hidden++;
+        hiddenCount.innerHTML = count;
+    }
+    else {
+        prevHidden = hidden;
+        hidden = 0;
+        hiddenCount.innerHTML = '%';
+    }
 }
     
