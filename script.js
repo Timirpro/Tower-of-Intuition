@@ -6,7 +6,7 @@ let stat = 0;
 let level = 1;
 let sum = 0;
 let hidden = 0;
-let prevHidden = 0;
+let prevHidden = 1;
 let maxAttempts = 1;
 let attempts;
 let levelCount = new Array(maxLevel).fill(0);
