@@ -97,11 +97,11 @@ button {
     width: 13em;
     height: 35px;
     padding-left: 10px;
+    padding-bottom: 2px;
     margin-right: 200px;
     font-size: 15px;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    /* font-weight: 500; */
     font-weight: bold;
     background-color: rgb(230, 230, 211);
     border: 2px solid #2a1c18;
