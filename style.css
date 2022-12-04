@@ -64,7 +64,7 @@ li:not(:nth-child(1)):not(:nth-child(2)) {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 50px;
-    transform: translateX(-3.8em);
+    transform: translateX(-3.9em);
     color: #633018;
     text-shadow: 1px 1px 3px black;
 }
@@ -98,7 +98,7 @@ button {
     height: 35px;
     padding-left: 10px;
     padding-bottom: 2px;
-    margin-right: 200px;
+    margin-right: 210px;
     font-size: 15px;
     text-align: left;
     font-family: 'Roboto', sans-serif;

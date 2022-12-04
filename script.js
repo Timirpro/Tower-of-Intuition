@@ -77,16 +77,16 @@ function pickFunction() {
         sum += levelAvgStat[i] * levelCount[i];
     }
     if (prevHidden < 1) {
-        hiddenCount.innerHTML = count;
+        hiddenCount.innerHTML = '>> ' + count + ' <<';
     }
-    console.log('%ctotal count = ' + count, "font-weight: bold;");
     // console.log((sum / count).toFixed(2));
-    showStatistic ();
-    sum = 0;
-    console.log(levelCount.join("      "));
-    console.log(levelWin.join("      "));
     // console.log(levelAvgStat.map(a => a.toFixed(2)).join("   "));
     // console.log(levelStat.map(a => a.toFixed(2)).join("   "));
+    console.log('%ctotal count = ' + count, "font-weight: bold;");
+    console.log(levelCount.join("      "));
+    console.log(levelWin.join("      "));
+    showStatistic ();
+    sum = 0;
     setTimeout(function(){
         randomChoice();
     }, 395);
@@ -124,7 +124,7 @@ function showCount() {
     if (hidden < 1) {
         prevHidden = hidden;
         hidden++;
-        hiddenCount.innerHTML = count;
+        hiddenCount.innerHTML = '>> ' + count + ' <<';
     }
     else {
         prevHidden = hidden;
