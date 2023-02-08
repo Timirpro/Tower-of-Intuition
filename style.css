@@ -58,13 +58,15 @@ li:not(:nth-child(1)):not(:nth-child(2)) {
 }
 .tier {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     margin-top: 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 50px;
-    transform: translateX(-3.9em);
+    /* transform: translateX(-3.9em); */
     color: #633018;
     text-shadow: 1px 1px 3px black;
 }
@@ -109,9 +111,17 @@ button {
     color: #2a1c18;
     /* transform: translateY(-0.5em); */
 }
+.tier :nth-child(3) {
+    margin-left: 210px;
+    margin-right: 0;
+    font-size: 15px;
+    text-align: center;
+}
 button:hover {
     background-color: #90EE90;
+    cursor: pointer;
 }
 .hidden_count:hover {
     background-color: #90EE90;
+    cursor: pointer;
 }
